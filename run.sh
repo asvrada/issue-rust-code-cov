@@ -23,4 +23,4 @@ echo ">>>> Show summary"
 llvm-cov-19 show -instr-profile=merged.profdata -object external/user1/target/llvm-cov-target/debug/deps/user1-8ff7a5a917b590f9 workspace/target/llvm-cov-target/debug/deps/main-732a092099ae27f7
 
 # echo ">>>> Saving to HTML..."
-# llvm-cov-19 show -instr-profile=merged.profdata -format html -object external/user1/target/llvm-cov-target/debug/deps/user1-8ff7a5a917b590f9 workspace/target/llvm-cov-target/debug/deps/main-732a092099ae27f7 > index.html
+# llvm-cov-19 show -instr-profile=merged.profdata -format html -object external/user1/target/llvm-cov-target/debug/deps/user1-8ff7a5a917b590f9 workspace/target/llvm-cov-target/debug/deps/main-732a092099ae27f7 -show-line-counts-or-regions -show-expansions -show-branches=count -output-dir=report

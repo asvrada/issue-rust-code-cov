@@ -4,3 +4,4 @@ Cargo.lock
 
 *.profdata
 index.html
+report/
