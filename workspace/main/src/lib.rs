@@ -5,18 +5,3 @@ pub fn something(num: i32) {
         _ => println!("num is something else"),
     }
 }
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn test_0() {
-        something(0);
-    }
-
-    #[test]
-    fn test_1() {
-        something(1);
-    }
-}

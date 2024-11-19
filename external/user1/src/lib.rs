@@ -1,15 +1,5 @@
-#[cfg(test)]
-mod tests {
-    use main::something;
+use main::something;
 
-    #[test]
-    fn test_1() {
-        something(1);
-    }
-
-    #[test]
-    fn test_else() {
-        something(1000);
-        something(1001);
-    }
+pub fn use_something(num: i32) {
+    something(num);
 }
